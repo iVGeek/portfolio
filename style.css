@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+}
+
+header {
+    background: #4B0082; /* Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+    color: #e0e0e0; /* Light grey for headings */
+}
+
+section {
+    padding: 20px;
+    background: #1F1F1F; /* Dark grey */
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #2A2A2A; /* Slightly lighter grey */
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6A0DAD; /* Purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #5B0C9B; /* Darker purple on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #e0e0e0; /* Light grey */
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #2A2A2A; /* Input background */
+    color: #e0e0e0; /* Input text color */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background: #3A3A3A; /* Darker on focus */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4B0082; /* Purple */
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 15px 0;
+    border-left: 4px solid #6A0DAD; /* Purple border for blockquote */
+    padding-left: 10px;
+}
