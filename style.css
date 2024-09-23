@@ -1,86 +1,116 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
+    background-color: #121212; /* Black background */
     color: #e0e0e0; /* Light grey text */
 }
 
 header {
-    background: #4B0082; /* Purple */
-    color: white;
-    padding: 20px;
+    background: #6A0DAD; /* Stronger purple */
+    color: #ffffff;
+    padding: 40px 20px; /* Increased padding for better spacing */
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
 }
 
 h1, h2, h3, h4 {
     margin: 10px 0;
-    color: #e0e0e0; /* Light grey for headings */
+    color: #e0e0e0; /* Light grey */
 }
 
 section {
-    padding: 20px;
-    background: #1F1F1F; /* Dark grey */
-    margin: 20px;
-    border-radius: 8px;
+    padding: 30px;
+    background: #1F1F1F; /* Dark grey background */
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px; /* Set max-width for better layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
+/* Portfolio Project Cards */
 .project {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
     background: #2A2A2A; /* Slightly lighter grey */
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.project:hover {
+    transform: scale(1.05);
+    background-color: #3A3A3A;
+}
+
+/* Call-to-Action Button */
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background: #6A0DAD; /* Purple */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button:hover {
     background: #5B0C9B; /* Darker purple on hover */
+    transform: translateY(-5px); /* Adds lift effect */
 }
 
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
+    background: #2A2A2A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 label {
-    margin-top: 10px;
-    color: #e0e0e0; /* Light grey */
+    margin-top: 15px;
+    color: #e0e0e0;
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    margin-top: 5px;
-    background: #2A2A2A; /* Input background */
-    color: #e0e0e0; /* Input text color */
+    margin-top: 8px;
+    background: #3A3A3A;
+    color: #e0e0e0;
+    transition: background-color 0.3s ease;
 }
 
 input:focus, textarea:focus {
+    background: #4A4A4A;
     outline: none;
-    background: #3A3A3A; /* Darker on focus */
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #4B0082; /* Purple */
+    padding: 20px 0;
+    background: #6A0DAD; /* Purple background */
     color: white;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
 
+footer p {
+    margin: 0;
+}
+
+/* Blockquote */
 blockquote {
     font-style: italic;
-    margin: 15px 0;
-    border-left: 4px solid #6A0DAD; /* Purple border for blockquote */
-    padding-left: 10px;
+    margin: 20px 0;
+    border-left: 5px solid #6A0DAD;
+    padding-left: 15px;
+    background: #1F1F1F;
+    border-radius: 5px;
 }
