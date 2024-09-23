@@ -12,16 +12,20 @@ body {
 .background {
     position: relative;
     z-index: 1;
+    background: url('space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: moveBackground 60s linear infinite;
 }
 
 /* Header Styles */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: white;
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Floating effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Floating effect */
     margin: 20px auto;
     width: 80%;
     position: relative;
@@ -52,11 +56,11 @@ h1, h2 {
 
 /* Section Styles */
 section {
-    padding: 40px;
+    padding: 40px 20px;
     background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
     margin: 20px auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Floating effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Floating effect */
     position: relative;
     width: 80%;
 }
@@ -114,21 +118,14 @@ input:focus, textarea:focus {
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: white;
     position: relative;
     z-index: 1;
 }
 
 /* Parallax Effect */
-body {
-    background: url('space-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    animation: moveBackground 60s linear infinite;
-}
-
 @keyframes moveBackground {
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 100%; }
