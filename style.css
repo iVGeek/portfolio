@@ -1,54 +1,58 @@
-/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* AMOLED black background */
-    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
 }
 
 header {
-    background: #4B0082; /* Purple */
-    color: white;
-    padding: 20px;
+    background-color: #121212;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Adds shadow to make the header more prominent */
+    padding: 40px;
+    color: #e0e0e0;
 }
 
-h1, h2, h3, h4 {
-    margin: 10px 0;
-    color: #e0e0e0; /* Light grey for headings */
+header h1 {
+    color: #A020F0;
+    font-size: 3em;
+    text-shadow: 0 0 20px #A020F0;
 }
 
-section {
-    padding: 20px;
-    background: #1F1F1F; /* Dark grey */
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.project {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #2A2A2A; /* Slightly lighter grey */
-    border-radius: 5px;
+header h2 {
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-size: 1.5em;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #6A0DAD; /* Purple */
+    background-color: #6A0DAD;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(106, 13, 173, 0.8); /* Glowing effect for button */
-    transition: background 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #6A0DAD;
 }
 
 .cta-button:hover {
-    background: #5B0C9B; /* Darker purple on hover */
-    box-shadow: 0 0 15px rgba(106, 13, 173, 1); /* Stronger glow on hover */
+    background-color: #8A2BE2;
+    box-shadow: 0 0 20px #8A2BE2;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+}
+
+.project {
+    background-color: #2A2A2A;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
 form {
@@ -57,36 +61,28 @@ form {
 }
 
 label {
+    color: #e0e0e0;
     margin-top: 10px;
-    color: #e0e0e0; /* Light grey */
 }
 
 input, textarea {
     padding: 10px;
+    margin-top: 5px;
+    background-color: #2A2A2A;
+    color: #e0e0e0;
     border: none;
     border-radius: 5px;
-    margin-top: 5px;
-    background: #2A2A2A; /* Input background */
-    color: #e0e0e0; /* Input text color */
 }
 
 input:focus, textarea:focus {
+    background-color: #3A3A3A;
     outline: none;
-    background: #3A3A3A; /* Darker on focus */
-    box-shadow: 0 0 10px rgba(106, 13, 173, 0.5); /* Subtle glowing effect when focused */
+    border: 2px solid #8A2BE2;
 }
 
 footer {
+    background-color: #121212;
+    color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
-    background: #4B0082; /* Purple */
-    color: white;
-}
-
-blockquote {
-    font-style: italic;
-    margin: 15px 0;
-    border-left: 4px solid #6A0DAD; /* Purple border for blockquote */
-    padding-left: 10px;
-    box-shadow: 0 0 10px rgba(106, 13, 173, 0.5); /* Glow effect around blockquote */
 }
