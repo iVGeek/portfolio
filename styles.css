@@ -65,6 +65,7 @@ body::before {
     max-width: 800px;
     z-index: 1;
     min-height: 60vh;
+    overflow: hidden; /* Hide overflow to keep sections tidy */
 }
 
 /* Planet Container */
@@ -75,13 +76,14 @@ body::before {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 0; /* Ensure planets are behind content */
 }
 
 .planet {
     position: absolute;
-    width: 150px;
-    height: auto;
-    animation: float 30s ease-in-out infinite, rotatePlanet 60s linear infinite;
+    width: 300px; /* Increased size of planets */
+    height: 300px; /* Increased size of planets */
+    animation: float 20s ease-in-out infinite, rotatePlanet 60s linear infinite;
 }
 
 .home .planet {
@@ -109,7 +111,7 @@ body::before {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
     100% {
         transform: translateY(0);
@@ -117,6 +119,9 @@ body::before {
 }
 
 @keyframes rotatePlanet {
+    0% {
+        transform: rotate(0deg);
+    }
     100% {
         transform: rotate(360deg);
     }
