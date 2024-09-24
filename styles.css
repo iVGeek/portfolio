@@ -53,15 +53,11 @@ a:hover {
     padding: 20px;
     text-align: center;
     position: relative;
+    background: url('space-bg.jpg') no-repeat center center/cover; /* Space-themed background */
 }
 
 /* Home Section Background Overlay with Stars */
-.home {
-    background: url('space-bg.jpg') no-repeat center center/cover;
-    background-color: #000; /* Fallback in case image doesn't load */
-}
-
-.overlay {
+.home .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,7 +91,7 @@ a:hover {
 
 /* About Section */
 .about {
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 50px;
     border-top: 1px solid #6a0dad;
 }
@@ -127,7 +123,7 @@ a:hover {
 }
 
 /* Projects Section */
-.projects {
+.projects-container {
     display: flex;
     justify-content: center;
     gap: 20px;
