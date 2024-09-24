@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Space-Themed Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Ian Vincent - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <nav class="nav">
+    <header class="nav">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -17,48 +15,49 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </header>
 
-    <!-- Home Section with Planet -->
     <section id="home" class="section home">
         <div class="planet-container">
-            <img src="planet1.jpg" alt="Planet 1" class="planet">
+            <video class="planet" src="planet1.mp4" autoplay loop muted></video>
         </div>
         <div class="content">
-            <h1 class="light-speed">Welcome to My Space-Themed Portfolio</h1>
-            <p>Floating through the galaxy of web development</p>
+            <h1>Empowering Your Business with Innovative Software Solutions & Efficient Virtual Assistance</h1>
+            <h2>Hi, I’m Ian Vincent, a Software Engineer and Virtual Assistant dedicated to helping you succeed.</h2>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
 
-    <!-- About Me Section with Planet -->
     <section id="about" class="section about">
         <div class="planet-container">
-            <img src="planet2.jpg" alt="Planet 2" class="planet">
+            <video class="planet" src="planet2.mp4" autoplay loop muted></video>
         </div>
         <div class="content">
             <h2>About Me</h2>
-            <p>I am a passionate software engineer with years of experience in developing scalable applications and solutions. Alongside my technical skills, I offer virtual assistance services that help businesses manage their operations efficiently.</p>
+            <p>I am a passionate software engineer with [X years] of experience in developing scalable applications and solutions.</p>
             <h3>Skills</h3>
-            <p>Technical Skills: JavaScript, Python, React, Django, etc.</p>
-            <p>VA Skills: Administrative Support, Social Media Management, Data Entry & Research</p>
+            <p>Technical Skills: [List your programming languages and tools]</p>
+            <p>VA Skills: [List organizational tools and skills]</p>
         </div>
     </section>
 
-    <!-- Skills Section with Planet -->
     <section id="skills" class="section skills">
         <div class="planet-container">
-            <img src="planet3.jpg" alt="Planet 3" class="planet">
+            <video class="planet" src="planet3.mp4" autoplay loop muted></video>
         </div>
         <div class="content">
             <h2>Skills</h2>
-            <p>Here you can list your skills in a visually appealing manner.</p>
+            <ul>
+                <li>Custom Software Development</li>
+                <li>Web Development</li>
+                <li>Application Development</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Projects Section with Planet -->
     <section id="projects" class="section projects">
         <div class="planet-container">
-            <img src="planet4.jpg" alt="Planet 4" class="planet">
+            <video class="planet" src="planet4.mp4" autoplay loop muted></video>
         </div>
         <div class="content">
             <h2>Projects</h2>
@@ -66,13 +65,12 @@
                 <h3>[Project Name]</h3>
                 <p>Description: A brief overview of the project.</p>
                 <p>Technologies Used: [List languages/frameworks]</p>
-                <a href="[GitHub/Live Demo]" target="_blank">View Project</a>
+                <a href="[GitHub/Live Demo]" target="_blank" class="cta-button">View Project</a>
             </div>
             <!-- Add more projects as needed -->
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="content">
             <h2>Contact</h2>
@@ -82,8 +80,8 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" autocomplete="email" required>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" autocomplete="message" required></textarea>
-                <button type="submit">Send Message</button>
+                <textarea id="message" name="message" autocomplete="off" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
             <p>Connect with me: <a href="[LinkedIn link]">LinkedIn</a> | <a href="[GitHub link]">GitHub</a></p>
         </div>
@@ -93,6 +91,6 @@
         <p>&copy; <span id="current-year"></span> Ian Vincent. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
