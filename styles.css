@@ -8,20 +8,27 @@
 
 body {
     color: #fff;
-    background-color: #000;
+    background-color: #000; /* Deep Black Background */
     overflow-x: hidden;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease;
 }
 
+a:hover {
+    color: #6a0dad; /* Glowing Dark Purple Hover */
+}
+
+/* Navigation */
 .nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
     z-index: 1000;
@@ -34,13 +41,10 @@ a {
 }
 
 .nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-.nav ul li a:hover {
-    color: #6a0dad;
-}
-
+/* Sections */
 .section {
     display: flex;
     justify-content: center;
@@ -51,7 +55,7 @@ a {
     position: relative;
 }
 
-/* Background Overlay */
+/* Background Overlay with Stars */
 .overlay {
     position: absolute;
     top: 0;
@@ -59,28 +63,37 @@ a {
     height: 100%;
     width: 100%;
     background: url('space-bg.jpg') no-repeat center center/cover;
-    filter: blur(10px) brightness(0.6);
+    filter: brightness(0.5);
     z-index: -1;
 }
 
-/* Home Section */
-.home {
-    color: #fff;
+.home .planet {
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+    animation: float 6s ease-in-out infinite;
 }
 
-.home .highlight {
-    color: #6a0dad;
-    text-shadow: 0 0 10px #6a0dad, 0 0 20px #6a0dad;
+.planet-image {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(106, 13, 173, 0.8));
 }
 
-.home .content {
-    z-index: 1;
-    max-width: 700px;
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 /* About Section */
 .about {
     background-color: #111;
+    padding: 50px;
+    border-top: 1px solid #6a0dad;
 }
 
 /* Skills Section */
@@ -110,24 +123,26 @@ a {
 }
 
 /* Projects Section */
-.project-card {
-    background-color: #222;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
 .projects {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(106, 13, 173, 0.7);
 }
 
 /* Contact Section */
@@ -145,6 +160,7 @@ input, textarea {
     padding: 15px;
     border-radius: 5px;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 button {
