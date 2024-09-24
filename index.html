@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enhanced Space-Themed Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Space-Themed Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,62 +19,74 @@
         </ul>
     </nav>
 
-    <!-- Home Section with Planets -->
+    <!-- Home Section with Planet -->
     <section id="home" class="section home">
-        <div class="overlay"></div>
+        <div class="planet-container">
+            <img src="planet1.jpg" alt="Planet 1" class="planet">
+        </div>
         <div class="content">
             <h1 class="light-speed">Welcome to My Space-Themed Portfolio</h1>
             <p>Floating through the galaxy of web development</p>
-            <!-- Floating Planets -->
-            <div class="planets">
-                <img src="planet1.jpg" alt="Planet 1" class="planet planet1">
-                <img src="planet2.jpg" alt="Planet 2" class="planet planet2">
-                <img src="planet3.jpg" alt="Planet 3" class="planet planet3">
-                <img src="planet4.jpg" alt="Planet 4" class="planet planet4">
-            </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About Me Section with Planet -->
     <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>I am a passionate software engineer with years of experience in developing scalable applications and solutions. Alongside my technical skills, I offer virtual assistance services that help businesses manage their operations efficiently.</p>
-        <h3>Skills</h3>
-        <p>Technical Skills: JavaScript, Python, React, Django, etc.</p>
-        <p>VA Skills: Administrative Support, Social Media Management, Data Entry & Research</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <h2>Skills</h2>
-        <p>Here you can list your skills in a visually appealing manner.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>[Project Name]</h3>
-            <p>Description: A brief overview of the project.</p>
-            <p>Technologies Used: [List languages/frameworks]</p>
-            <a href="[GitHub/Live Demo]" target="_blank">View Project</a>
+        <div class="planet-container">
+            <img src="planet2.jpg" alt="Planet 2" class="planet">
         </div>
-        <!-- Add more projects as needed -->
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I am a passionate software engineer with years of experience in developing scalable applications and solutions. Alongside my technical skills, I offer virtual assistance services that help businesses manage their operations efficiently.</p>
+            <h3>Skills</h3>
+            <p>Technical Skills: JavaScript, Python, React, Django, etc.</p>
+            <p>VA Skills: Administrative Support, Social Media Management, Data Entry & Research</p>
+        </div>
+    </section>
+
+    <!-- Skills Section with Planet -->
+    <section id="skills" class="section skills">
+        <div class="planet-container">
+            <img src="planet3.jpg" alt="Planet 3" class="planet">
+        </div>
+        <div class="content">
+            <h2>Skills</h2>
+            <p>Here you can list your skills in a visually appealing manner.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section with Planet -->
+    <section id="projects" class="section projects">
+        <div class="planet-container">
+            <img src="planet4.jpg" alt="Planet 4" class="planet">
+        </div>
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>[Project Name]</h3>
+                <p>Description: A brief overview of the project.</p>
+                <p>Technologies Used: [List languages/frameworks]</p>
+                <a href="[GitHub/Live Demo]" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" autocomplete="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Connect with me: <a href="[LinkedIn link]">LinkedIn</a> | <a href="[GitHub link]">GitHub</a></p>
+        <div class="content">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" autocomplete="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Connect with me: <a href="[LinkedIn link]">LinkedIn</a> | <a href="[GitHub link]">GitHub</a></p>
+        </div>
     </section>
 
     <footer>
