@@ -1,7 +1,8 @@
-// Simple form validation (if needed)
-const form = document.getElementById('contact-form');
+// Set the current year in the footer
+document.getElementById("current-year").textContent = new Date().getFullYear();
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the form from submitting
-    alert('Form submitted successfully!');
+// Optional: Handle form submission (for demonstration)
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    alert("Thank you for your message!");
 });
