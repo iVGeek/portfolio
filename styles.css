@@ -22,6 +22,7 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav ul {
@@ -38,6 +39,11 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #6a0dad; /* Dark purple */
 }
 
 /* Section */
@@ -46,6 +52,9 @@ body {
     height: 100vh; /* Full height of the viewport */
     overflow: hidden;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Video Background */
@@ -73,16 +82,17 @@ body {
 .content {
     position: relative;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 100%;
+    max-width: 800px;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
-/* Buttons and Forms */
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
 .cta-button {
     background: #6a0dad; /* Dark purple */
     color: #fff;
@@ -91,7 +101,7 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
