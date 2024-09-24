@@ -8,22 +8,34 @@
 
 body {
     color: #fff;
-    background-color: #000; /* Deep black background as fallback */
+    background-color: #000;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-/* Links */
-a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
+/* Smooth Section Entry */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: url('space-bg.jpg') no-repeat center center/cover;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s ease forwards;
 }
 
-a:hover {
-    color: #6a0dad; /* Glowing Dark Purple Hover */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Navigation */
+/* Navbar Animation */
 .nav {
     position: fixed;
     top: 0;
@@ -32,6 +44,16 @@ a:hover {
     padding: 20px;
     text-align: center;
     z-index: 1000;
+    animation: dropDown 1.5s ease-out;
+}
+
+@keyframes dropDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .nav ul {
@@ -44,34 +66,29 @@ a:hover {
     margin: 0 20px;
 }
 
-/* Sections */
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    background: url('space-bg.jpg') no-repeat center center/cover; /* Space-themed background */
+.nav ul li a {
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Home Section Background Overlay with Stars */
-.home .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-    z-index: -1;
+.nav ul li a:hover {
+    color: #6a0dad;
+    transform: scale(1.1);
 }
 
-.home .planet {
+/* Planet Rotation */
+.planet {
     position: absolute;
     bottom: -10%;
     right: 10%;
-    animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite, rotatePlanet 20s linear infinite;
+}
+
+@keyframes rotatePlanet {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .planet-image {
@@ -80,56 +97,48 @@ a:hover {
     filter: drop-shadow(0 0 15px rgba(106, 13, 173, 0.8));
 }
 
-@keyframes float {
+/* Pulsing Buttons */
+button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+button:hover {
+    background-color: #500a8f;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
     0%, 100% {
-        transform: translateY(0);
+        transform: scale(1);
     }
     50% {
-        transform: translateY(-20px);
+        transform: scale(1.1);
     }
 }
 
-/* About Section */
-.about {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 50px;
-    border-top: 1px solid #6a0dad;
-}
-
-/* Skills Section */
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.skill {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.progress-bar {
-    background: #333;
-    border-radius: 5px;
-    width: 100%;
-    height: 10px;
-    margin-top: 5px;
-}
-
-.progress {
+/* Skill Progress Bar Animation */
+.skill .progress-bar .progress {
     background: #6a0dad;
     height: 100%;
     border-radius: 5px;
+    width: 0;
+    animation: fillProgress 2s ease forwards;
 }
 
-/* Projects Section */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+@keyframes fillProgress {
+    to {
+        width: 100%;
+    }
 }
 
+/* Projects Floating Animation */
 .project-card {
     background-color: #222;
     border-radius: 10px;
@@ -138,6 +147,7 @@ a:hover {
     width: 250px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: floatCard 4s ease-in-out infinite;
 }
 
 .project-card:hover {
@@ -145,34 +155,11 @@ a:hover {
     box-shadow: 0 10px 30px rgba(106, 13, 173, 0.7);
 }
 
-/* Contact Section */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-input, textarea {
-    background: #222;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #6a0dad;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #500a8f;
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
