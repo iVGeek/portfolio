@@ -11,20 +11,6 @@ body {
     background-color: #000;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    position: relative;
-}
-
-/* Space background for parallax effect */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('space-bg.jpg') no-repeat center center/cover;
-    z-index: -1;
-    transform: translateZ(-2px) scale(3); /* Parallax effect */
 }
 
 /* Navigation */
@@ -57,61 +43,59 @@ body::before {
 /* Section */
 .section {
     position: relative;
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    z-index: 1;
-    min-height: 60vh;
-    overflow: hidden; /* Hide overflow to keep sections tidy */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    color: #fff;
 }
 
-/* Planet Container */
-.planet-container {
+/* Video Background */
+.video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 0; /* Ensure planets are behind content */
+    z-index: 0; /* Ensure videos are behind content */
 }
 
-.planet {
+.video-background video {
     position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
-
-/* Positioning Planets */
-.home .planet {
-    top: 10%;
-    left: 10%;
-}
-
-.about .planet {
-    top: 20%;
-    right: 10%;
-}
-
-.skills .planet {
-    bottom: 10%;
-    left: 20%;
-}
-
-.projects .planet {
-    bottom: 10%;
-    right: 20%;
+    transform: translate(-50%, -50%);
 }
 
 /* Content */
 .content {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Buttons and Forms */
+.cta-button {
+    background: #6a0dad; /* Dark purple */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #7a1eaf; /* Lighter purple */
 }
 
 /* Contact Form */
