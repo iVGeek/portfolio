@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian Vincent - Space Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space-Themed Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section with Space Theme -->
+    <!-- Home Section -->
     <section id="home" class="section home">
         <div class="overlay"></div>
         <div class="content">
-            <h1>Welcome to <span class="highlight">My Galaxy</span></h1>
-            <p>Crafting digital solutions that are out of this world.</p>
-        </div>
-        <div class="planet">
-            <img src="planet.png" alt="Planet" class="planet-image">
+            <h1>Welcome to My Space-Themed Portfolio</h1>
+            <p>Floating through the galaxy of web development</p>
+            <div class="planet">
+                <img src="planet.png" alt="planet" class="planet-image">
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>I'm a software engineer with a passion for creating impactful, futuristic web applications and AI solutions. Let's explore the digital universe together.</p>
+        <p>I am a passionate web developer floating through the cosmos of code, creating elegant, user-friendly designs in a galaxy far, far away.</p>
     </section>
 
     <!-- Skills Section -->
@@ -42,37 +42,37 @@
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
                 <h3>JavaScript</h3>
                 <div class="progress-bar">
-                    <span class="progress" style="width: 90%;"></span>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="progress-bar">
-                    <span class="progress" style="width: 85%;"></span>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>React</h3>
-                <div class="progress-bar">
-                    <span class="progress" style="width: 80%;"></span>
+                    <div class="progress" style="width: 80%;"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <h2>My Projects</h2>
-        <div class="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
             <div class="project-card">
                 <h3>Project 1</h3>
-                <p>Modern web app built with React and Django.</p>
+                <p>Details about the project.</p>
             </div>
             <div class="project-card">
                 <h3>Project 2</h3>
-                <p>An AI-powered data analysis tool.</p>
+                <p>Details about the project.</p>
             </div>
         </div>
     </section>
@@ -81,13 +81,13 @@
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="name">
+            <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="email">
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
