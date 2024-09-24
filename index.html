@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian Vincent - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Side Navigation -->
-    <nav class="side-nav">
+    <!-- Navigation Menu -->
+    <nav class="nav">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,22 +21,23 @@
 
     <!-- Home Section -->
     <section id="home" class="section home">
+        <div class="overlay"></div>
         <div class="content">
-            <h1>Ian Vincent</h1>
-            <p>Software Engineer | Virtual Assistant</p>
+            <h1>Welcome to <span class="highlight">My Universe</span></h1>
+            <p>I create modern, innovative web and software solutions.</p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>I'm a passionate software engineer with expertise in developing modern web applications and AI solutions. Explore my work and skills.</p>
+        <p>I'm a software engineer with experience in creating innovative web applications and A.I. solutions. I blend creativity and technical expertise to deliver sleek digital experiences.</p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section skills">
         <h2>Skills</h2>
-        <div class="skill-container">
+        <div class="skills-container">
             <div class="skill">
                 <h3>JavaScript</h3>
                 <div class="progress-bar">
@@ -62,13 +63,13 @@
     <section id="portfolio" class="section portfolio">
         <h2>My Projects</h2>
         <div class="projects">
-            <div class="project">
+            <div class="project-card">
                 <h3>Project 1</h3>
-                <p>A modern web app built with React and Django.</p>
+                <p>Modern web app built with React and Django.</p>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Project 2</h3>
-                <p>An AI-powered tool for data analysis.</p>
+                <p>An AI-powered data analysis tool.</p>
             </div>
         </div>
     </section>
@@ -77,13 +78,10 @@
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
