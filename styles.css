@@ -81,9 +81,10 @@ body::before {
 
 .planet {
     position: absolute;
-    width: 300px; /* Increased size of planets */
-    height: 300px; /* Increased size of planets */
+    width: 500px; /* Adjust size of planets */
+    height: 500px; /* Adjust size of planets */
     animation: float 20s ease-in-out infinite, rotatePlanet 60s linear infinite;
+    object-fit: cover;
 }
 
 .home .planet {
