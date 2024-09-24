@@ -19,74 +19,67 @@
         </ul>
     </nav>
 
-    <!-- Home Section with Light Speed Effect -->
+    <!-- Home Section with Planets -->
     <section id="home" class="section home">
         <div class="overlay"></div>
         <div class="content">
             <h1 class="light-speed">Welcome to My Space-Themed Portfolio</h1>
             <p>Floating through the galaxy of web development</p>
-            <div class="planet">
-                <img src="planet.png" alt="planet" class="planet-image">
+            <!-- Floating Planets -->
+            <div class="planets">
+                <img src="planet1.jpg" alt="Planet 1" class="planet planet1">
+                <img src="planet2.jpg" alt="Planet 2" class="planet planet2">
+                <img src="planet3.jpg" alt="Planet 3" class="planet planet3">
+                <img src="planet4.jpg" alt="Planet 4" class="planet planet4">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>I am a passionate web developer floating through the cosmos of code, creating elegant, user-friendly designs in a galaxy far, far away.</p>
+        <p>I am a passionate software engineer with years of experience in developing scalable applications and solutions. Alongside my technical skills, I offer virtual assistance services that help businesses manage their operations efficiently.</p>
+        <h3>Skills</h3>
+        <p>Technical Skills: JavaScript, Python, React, Django, etc.</p>
+        <p>VA Skills: Administrative Support, Social Media Management, Data Entry & Research</p>
     </section>
 
-    <!-- Skills Section with Planet Icons -->
+    <!-- Skills Section -->
     <section id="skills" class="section skills">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </div>
-        </div>
+        <p>Here you can list your skills in a visually appealing manner.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Details about the project.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Details about the project.</p>
-            </div>
+        <div class="project">
+            <h3>[Project Name]</h3>
+            <p>Description: A brief overview of the project.</p>
+            <p>Technologies Used: [List languages/frameworks]</p>
+            <a href="[GitHub/Live Demo]" target="_blank">View Project</a>
         </div>
+        <!-- Add more projects as needed -->
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <form id="contact-form">
-            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="name">
-            <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="email">
-            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" autocomplete="message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <p>Connect with me: <a href="[LinkedIn link]">LinkedIn</a> | <a href="[GitHub link]">GitHub</a></p>
     </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Ian Vincent. All rights reserved.</p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
